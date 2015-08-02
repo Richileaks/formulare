@@ -1,0 +1,40 @@
+\begin{Form}
+	\def\MakeTextField#1#2{\vbox to #2{\hfill}}
+	\def\FormTextLine[#1]#2{#2 & \TextField[#1]{}}
+	\begin{tabu}{rX}
+		\tabulinesep=^0.2em_0.2em
+		\FormTextLine[name=FIRMA]{Firma/Verein}\\
+		\FormTextLine[name=ANREDE]{Anrede und ggf. Titel}\\
+		\FormTextLine[name=NAME]{Name, Vorname}\\
+		\FormTextLine[name=STR]{Straße}\\
+		\FormTextLine[name=PLZ]{PLZ, Ort}\\
+		\FormTextLine[name=KLASSE]{Beitragsklasse} mindestens \EUR{2.50} pro Monat\\
+		\FormTextLine[name=GEB]{Geburtsdatum}\\
+	\end{tabu}
+
+\begin{framed}
+	\CheckBox[name=DATENWEITERGABE]{}
+	Vorname, Name und E-Mailadresse sollen nicht in öffentliche Verzeichnisse aufgenommen werden.
+\end{framed}
+\end{Form}
+
+\begin{framed}{\textbf{Hinweise zum Vereinsbeitrag:}}\\
+	Der bingo e.V. Vereinsbeitrag ist steuerbegünstigt,
+	siehe Beitragsordnung auf Seite~\pageref{sec:beitragsordnung}.
+\end{framed}
+\begin{framed}
+	Bürgernetzverein Ingolstadt, abgekürzt bingo e.V.\\
+	Krumenauer Straße 54\\
+	85049 Ingolstadt\\
+	Gläubiger-Identifikationsnummer: 
+	\vskip1em
+\begin{center} \large SEPA-Lastschriftmandat \end{center}
+
+Mandatsreferenz wird seperat mitgeteilt
+\vskip1em
+Ich ermächtige den Zahlungsempfänger bingo e.V. Zahlungen von meinem Konto mittels Lastschrift einzuziehen. Zugleich weise ich mein Kreditinstitut an, die vom Zahlungsempfänger bingo e.V. auf mein Konto gezogenen Lastschriften einzulösen.  
+\vskip1em
+\textbf{Hinweis: Ich kann innerhalb von acht Wochen, beginnend mit dem Belastungsdatum, die Erstattung des belasteten Betrages verlangen. Es gelten dabei die mit meinem Kreditinstitut vereinbarten Bedingungen.}
+\vskip1em
+\textbf{Zahlungsart: Wiederkehrende Zahlung}
+\end{framed}
