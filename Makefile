@@ -4,7 +4,9 @@ all: $(addsuffix .pdf,$(DOCS))
 
 
 %.pdf: %.tex tex/*
-	latexmk -f -pdf $<
+	pdflatex $<
+
+.PHONY: all clean
 
 clean:
-	latexmk -c
+	-rm -f *.{aux,log,out}
