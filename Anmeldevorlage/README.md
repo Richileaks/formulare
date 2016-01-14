@@ -10,7 +10,14 @@ $ cd bingoev-latex-ci
 $ make userinstall
 ```
 
-Afterwards you can compile *anmeldeformular* with your favorite LaTeX compiler, eg. pdftex:
+Afterwards you can compile *anmeldeformular* by using the included `Makefile`:
 ```plain
-$ pdflatex Anmeldevorlage.tex
+$ make
 ```
+
+## Editing
+Please familiarise yourself with the usage of `aspell` and use the `spell` target in the `Makefile`:
+```plain
+$ make spell
+```
+When you're done editing and spell-checking the document, please also commit the possibly amended custom dictionary `aspell-dict.dat`.
