@@ -1,15 +1,15 @@
 \begin{Form}
-	\def\MakeTextField#1#2{\vbox to #2{\hfill}}
-	\def\FormTextLine[#1]#2{#2 & \TextField[#1]{}}
+	\def\MakeTextField#1#2{\rule{0em}{#2}{\hspace{\fill}}}
 	\begin{tabu}{rX}
 		\tabulinesep=^0.2em_0.2em
-		\FormTextLine[name=FIRMA]{Firma/Verein}\\
-		\FormTextLine[name=ANREDE]{Anrede und ggf. Titel}\\
-		\FormTextLine[name=NAME]{Name, Vorname}\\
-		\FormTextLine[name=STR]{Straße}\\
-		\FormTextLine[name=PLZ]{PLZ, Ort}\\
+		Firma/Verein & \TextField[name=FIRMA]{} \\
+		Anrede und ggf. Titel & \TextField[name=ANREDE]{} \\
+		Name, Vorname & \TextField[name=NAME]{} \\
+		Straße & \TextField[name=STR]{} \\
+		PLZ, Ort & \TextField[name=PLZ]{} \\
+		Geburtsdatum & \TextField[name=GEB]{} \\
 		Beitragsklasse & \ChoiceMenu[combo=true,name=KLASSE]{}{K10,K20,K30,K40,K42,K50,K60,K70,K80,K90} siehe Beitragsordnung auf Seite~\pageref{sec:beitragsordnung}\\
-		\FormTextLine[name=GEB]{Geburtsdatum}\\
+		Bankverbindung & IBAN~\TextField[name=IBAN]{} BIC~\TextField[name=BIC]{} \\
 	\end{tabu}
 
 %\begin{framed}
