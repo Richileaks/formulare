@@ -5,6 +5,7 @@ all: $(addsuffix .pdf,$(DOCS))
 
 %.pdf: %.tex tex/*
 	pdflatex $<
+	pdflatex $<
 
 .PHONY: all clean spell
 
