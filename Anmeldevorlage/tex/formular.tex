@@ -16,7 +16,6 @@
 %	\CheckBox[name=DATENWEITERGABE]{}
 %	Vorname, Name und E-Mailadresse sollen nicht in öffentliche Verzeichnisse aufgenommen werden.
 %\end{framed}
-\end{Form}
 
 \begin{framed}{\textbf{Hinweise zum Vereinsbeitrag:}}\\
 	Der bingo e.V. Vereinsbeitrag ist steuerbegünstigt,
@@ -38,3 +37,9 @@ Ich ermächtige den Zahlungsempfänger bingo e.V. Zahlungen von meinem Konto mit
 \vskip1em
 \textbf{Zahlungsart: Wiederkehrende Zahlung}
 \end{framed}
+
+	\begin{tabu}{XXX[2]}
+		Ort & Datum & Unterschrift \\
+		\TextField[name=SIGN_ORT]{} & \TextField[name=SIGN_DATUM]{} & \TextField[name=SIGN]{} \\
+	\end{tabu}
+\end{Form}
