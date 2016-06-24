@@ -1,5 +1,6 @@
 \begin{Form}
-	\def\MakeTextField#1#2{\rule{0em}{#2}{\hspace{\fill}}}
+	\def\TextFieldWidth{\fill}
+	\def\MakeTextField#1#2{\rule{0em}{#2}{\hspace{\TextFieldWidth}}}
 	\begin{tabu}{rX}
 		\tabulinesep=^0.2em_0.2em
 		Firma/Verein & \TextField[name=FIRMA]{} \\
@@ -9,7 +10,11 @@
 		PLZ, Ort & \TextField[name=PLZ]{} \\
 		Geburtsdatum & \TextField[name=GEB]{} \\
 		Beitragsklasse & \ChoiceMenu[combo=true,name=KLASSE]{}{K10,K20,K30,K40,K42,K50,K60,K70,K80,K90} siehe Beitragsordnung auf Seite~\pageref{sec:beitragsordnung}\\
-		Bankverbindung & IBAN~\TextField[name=IBAN]{} BIC~\TextField[name=BIC]{} \\
+		IBAN & \def\TextFieldWidth{\stretch{2}}\TextField[name=IBAN]{}
+			\hspace{2\tabcolsep}%
+			BIC%
+			\hspace{\tabcolsep}%
+			\def\TextFieldWidth{\stretch{1}}\TextField[name=BIC]{} \\
 	\end{tabu}
 
 %\begin{framed}
