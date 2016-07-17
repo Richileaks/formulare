@@ -1,0 +1,38 @@
+\documentclass[DIV=12,BCOR=1.5cm]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[table]{xcolor}
+% Prevent an option clash
+\usepackage[letterhead,impressum]{bingoev}
+\usepackage{tabu}
+\usepackage{framed}
+\usepackage{eurosym}
+\usepackage{multicol}
+\usepackage{rotating}
+\usepackage{tabularx}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=blue}
+
+\renewcommand{\DefaultOptionsofCheckBox}{print,bordercolor=black}
+\renewcommand{\DefaultOptionsofText}{print,bordercolor=black,borderstyle=U}
+\renewcommand{\DefaultOptionsofComboBox}{print,sort,bordercolor=black,borderstyle=U}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\setlength{\parindent}{0pt}
+
+\newcommand{\ShLogin}{EM1337}
+\newcommand{\ShName}{Mustermann}
+\newcommand{\ShVorname}{Erika}
+\newcommand{\ShAddrStrasse}{Heidestr. 17}
+\newcommand{\ShAddrStadt}{12345 Berlin}
+\newcommand{\ShKaution}{75,-}
+
+\title{Schlüsselvertrag}
+\date{}
+
+\begin{document}
+	%\maketitle
+	\input{tex/formular.tex}
+	\input{tex/schluesseltabelle.tex}
+\end{document}
