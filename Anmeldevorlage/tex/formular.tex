@@ -6,15 +6,13 @@
 		Firma/Verein & \TextField[name=FIRMA]{} \\
 		Anrede und ggf. Titel & \TextField[name=ANREDE]{} \\
 		Name, Vorname & \TextField[name=NAME]{} \\
+		Telefonnummer & \TextField[name=FON]{} \\
 		Straße & \TextField[name=STR]{} \\
 		PLZ, Ort & \TextField[name=PLZ]{} \\
 		Geburtsdatum & \TextField[name=GEB]{} \\
-		Beitragsklasse & \ChoiceMenu[combo=true,name=KLASSE]{}{K10,K20,K30,K40,K42,K50,K60,K70,K80,K90} siehe Beitragsordnung auf Seite~\pageref{sec:beitragsordnung}\\
-		IBAN & \def\TextFieldWidth{\stretch{2}}\TextField[name=IBAN]{}
-			\hspace{2\tabcolsep}%
-			BIC%
-			\hspace{\tabcolsep}%
-			\def\TextFieldWidth{\stretch{1}}\TextField[name=BIC]{} \\
+		Beitragsklasse & \ChoiceMenu[combo=true,name=KLASSE]{}{K10,K20,K30,K40,K50,K60,K70,K80,K90} siehe Beitragsordnung auf Seite~\pageref{sec:beitragsordnung}\\
+		IBAN & \TextField[name=IBAN]{} \\
+		BIC & \TextField[name=BIC]{} \\
 	\end{tabu}
 
 %\begin{framed}
@@ -43,6 +41,7 @@ Ich ermächtige den Zahlungsempfänger bingo e.V. Zahlungen von meinem Konto mit
 \textbf{Zahlungsart: Wiederkehrende Zahlung}
 \end{framed}
 
+	\vspace{\fill}
 	\begin{tabu}{XXX[2]}
 		Ort & Datum & Unterschrift \\
 		\TextField[name=SIGN_ORT]{} & \TextField[name=SIGN_DATUM]{} & \TextField[name=SIGN]{} \\

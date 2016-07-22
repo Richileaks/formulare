@@ -22,7 +22,11 @@
 \date{}
 
 \begin{document}
-\maketitle
+\makeatletter
+\vskip1em
+{\usekomafont{title}\huge\@title}
+\vskip2em
+\makeatother
 
 \input{tex/formular}
 \input{tex/beitragsordnung}
