@@ -1,15 +1,33 @@
 \begin{Form}
-	\textbf{Vereinbarung zwischen} \\\\
-	\bingoevNameLang. \, \bingoevAddrStrasse \, \bingoevAddrStadt, im folgenden \textit{\bingoevName} \, genannt \\ und \\
-	Login: \textbf{\ShLogin} \\
-	Name: \textbf{\ShName} \\
-	Vorname: \textbf{\ShVorname} \\
-	Anschrift: \textbf{\ShAddrStrasse;\,\ShAddrStadt} \\
-	im folgenden Schlüsselhalter (SH) genannt.\\
+	{\centering
+		\large
+		\textbf{Vereinbarung zwischen}\\
+	}
+	\vspace{1em}
+	\begin{tabu}{@{}XcX@{}}
+		\bingoevNameLang & und & \ShVorname{} \ShName \\
+		\bingoevAddrStrasse && \ShAddrStrasse \\
+		\bingoevAddrStadt && \ShAddrStadt \\
+											 && Login: \ShLogin \\
+		im Folgenden \textit{\bingoevName} genannt && im Folgenden Schlüsselhalter (\textit{SH}) genannt.
+	\end{tabu}
+	%\begin{multicols}{2}
+	%	\bingoevNameLang\\
+	%	\bingoevAddrStrasse\\
+	%	\bingoevAddrStadt\\ im folgenden \textit{\bingoevName} genannt, und
+	%	\columnbreak{}\\
+	%	\begin{tabu}{@{}ll@{}}
+	%		Vorname & \textbf{\ShVorname} \\
+	%		Name & \textbf{\ShName} \\
+	%		Login & \textbf{\ShLogin} \\
+	%		Anschrift & \textbf{\ShAddrStrasse;\,\ShAddrStadt} \\
+	%	\end{tabu}
+	%	im folgenden Schlüsselhalter (SH) genannt.\\
+	%\end{multicols}
 	
 	\textbf{Schlüsseldaten siehe Rückseite.}\\
 	
-	Der Schlüssel ist ein persönlicher Schlüssel der SH. Er darf ausschließlich nach Rücksprache und mit schriftlicher Genehmigung durch den Vorstand an Dritte weitergegeben werden.\\
+	Der Schlüssel ist ein persönlicher Schlüssel des SH. Er darf ausschließlich nach Rücksprache und mit schriftlicher Genehmigung durch den Vorstand an Dritte weitergegeben werden.\\
 	
 	Für den Schlüssel ist vom SH eine Kaution von \textbf{\ShKaution}\, Euro zu hinterlegen. Die Kaution wird auf einem Sparbuch verzinslich angelegt. Nach Rückgabe des Schlüssels erhält der SH die Kaution inkl. Zinsen zurück.\\
 	

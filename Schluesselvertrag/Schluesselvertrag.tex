@@ -32,7 +32,13 @@
 \date{}
 
 \begin{document}
-	%\maketitle
+	\vspace{2em}
+	{\makeatletter
+		\centering%
+		\usekomafont{title}\huge\@title%
+		\par%
+	\makeatother}
+	\vspace{1em}
 	\input{tex/formular.tex}
 	\input{tex/schluesseltabelle.tex}
 \end{document}
