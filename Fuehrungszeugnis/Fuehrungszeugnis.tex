@@ -1,0 +1,58 @@
+\documentclass{bingoevletter}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[table]{xcolor}
+\usepackage{tabu}
+\usepackage{framed}
+\usepackage{eurosym}
+\usepackage{multicol}
+\usepackage{rotating}
+\usepackage{tabularx}
+
+
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=blue}
+
+\renewcommand{\DefaultOptionsofCheckBox}{print,bordercolor=black}
+\renewcommand{\DefaultOptionsofText}{print,bordercolor=black,borderstyle=U}
+\renewcommand{\DefaultOptionsofComboBox}{print,sort,bordercolor=black,borderstyle=U}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\setlength{\parindent}{0pt}
+
+
+
+\include{daten}
+
+
+
+\begin{document}
+\begin{letter}{% 
+		\BehoerdeName\\
+		\BehoerdeStr\\
+		\BehoerdeOrt%
+	}
+	\opening{Ausstellung eines Erweiterten Führungszeugnisses für die Ehrenamtliche und Unentgeltliche Tätigkeit.\\ Antrag auf Gebührenbefreiung.}
+	
+	Sehr geehrte Damen und Herren,
+	
+	
+	
+	Herr/Frau \Vorname\ \Nachname , geb. am \GeburtsDatum\
+	wohnhaft \Adresse,\ \PLZ\ \Ort\
+	ist bei uns als Dozent ehrenamtlich und unentgeltlich tätig.\\
+	
+	
+	Im Rahmen seines/ihres Ehrenamts u.a. die Beaufsichtigung Betreuung, Erziehung und Ausbildung von Minderjährigen (§30a Abs. 1 Nr. 2b BZRG) zu seinem/ihrem Aufgabenbereich.\\
+	
+	Aus diesem Grund bitten wir mit Bezug auf das Bundeszentralregistergesetz (§30a) um Erstellung eines erweiterten Führungszeugnisses zur Vorlage bei uns.\\
+	Unter Hinweis auf die Richtlinien des Bundesamtes für Justiz beantragen wir zugleich die Gebührenfreiheit.\\
+	Wir bedanken uns für Ihre Unterstützung und verbleiben\\
+	
+	
+		
+	
+	\closing{mit freundlichen Grüßen}
+\end{letter}	
+\end{document}
