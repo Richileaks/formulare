@@ -1,0 +1,50 @@
+\documentclass{bingoevletter}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[table]{xcolor}
+\usepackage{tabu}
+\usepackage{framed}
+\usepackage{eurosym}
+\usepackage{multicol}
+\usepackage{rotating}
+\usepackage{tabularx}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=blue}
+
+\renewcommand{\DefaultOptionsofCheckBox}{print,bordercolor=black}
+\renewcommand{\DefaultOptionsofText}{print,bordercolor=black,borderstyle=U}
+\renewcommand{\DefaultOptionsofComboBox}{print,sort,bordercolor=black,borderstyle=U}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\setlength{\parindent}{0pt}
+
+
+\include{daten}
+
+
+
+
+\begin{document}
+\begin{letter}{% 
+		\Anrede \\
+		\Vorname \ \Nachname\\
+		\Adresse\\
+		\PLZ \ \Ort%
+	}
+	\opening{Bestätigung Ihrer Kündigung der Mitgliedschaft beim Bürgernetz Ingolstadt e.V.}
+	
+	Sehr geehrte(r) \Anrede \ \Vorname \ \Nachname, 
+	
+	mit Bedauern haben wir Ihre Kündigung vom \textbf{\EingangDatum}\ zur Kenntnis genommen und bestätigen Ihnen diese hiermit. Sie wird zum \textbf{31.12.\AustrittJahr}\ wirksam. \\
+	
+	Außerdem heben wir zum gleichen Zeitpunkt die Zugangsberechtigung zu unseren Kommunikationseinrichtungen auf (Login: \Login). \\
+	Bitte sichern Sie bis zu diesem Datum etwaige auf den Servern von bingo e.V. abgelegte persönliche Daten (Mail, Homepage etc.), da diese mit Erlöschen der Mitgliedschaft automatisch unwiderruflich gelöscht werden. \\
+	
+	
+	Kündigungsfrist gemäß Vereinssatzung bingo e.V. vom 29.04.2003: \\
+	„Der Austritt ist schriftlich gegenüber dem Vorstand zu erklären. Er ist zum Ende eines Kalenderjahres unter Einhaltung einer Kündigungsfrist von drei Monaten zulässig.“ \\
+	\closing{Mit freundlichen Grüßen}
+\end{letter}	
+\end{document}
